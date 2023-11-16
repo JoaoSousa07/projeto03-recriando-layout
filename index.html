@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="titulo">
+        <h1>MENTORIA</h1>
+        <p>Preencha o formulário abaixo para agendar sua mentoria</p>
+    </div>
+
+    <form id="my_form">
+        <div class="page">
+            <fieldset>
+                <section class="inf_pessoais">
+                    <legend>INFORMAÇÕES PESSOAIS</legend>
+                    <div class="col2-medio">
+                        <div class="input_geral">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" required/>
+                        </div>
+                        <div class="input_geral">
+                            <label for="surname">Sobrenome</label>
+                            <input type="text"  id="surname" required/>
+                        </div>
+                    </div>
+            
+                    <div class="col-grande">
+                        <div class="input_geral">
+                            <label for="email">Email <span>(digite um email válido)</span></label>
+                            <input type="email"  id="email" required/>
+                        </div>
+                        <div class="input_geral">
+                            <label for="name">Senha <span>(minimo de 6 caracteres)</span></label>
+                            <input type="password"  id="password" required/>
+                        </div>
+                    </div>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <section class="inf_mentor">
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                    <div class="col-grande">
+                        <div class="input_geral">
+                            <label for="name-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                            <input type="text"  id="name-mentor" required/>
+                        </div>
+                    </div>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <section class="horarios">
+                    <legend>Seus horários disponíveis</legend>
+                    <legend id="sub_legend2">Primeira mentoria</legend>
+            
+                    <section class="col3">
+                        <div class="col-medio">
+                            <div class="input_geral">
+                                <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+                                <input type="date" id="data" required/>
+                            </div>
+                        </div>
+                        <div class="col2-min">
+                            <div class="input_geral">
+                                <label for="das">Das</label>
+                                <input type="time" id="das" required/>
+                            </div>
+                            <div class="input_geral">
+                                <label for="ate">até</label>
+                                <input type="time" id="ate" required/>
+                            </div>
+                        </div>
+                    </section>
+                <legend id="sub_legend2">Segunda mentoria</legend>
+            
+                    <section class="col3">
+                        <div class="col-medio">
+                            <div class="input_geral">
+                                <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+                                <input type="date" id="data" required/>
+                            </div>
+                        </div>
+                        <div class="col2-min">
+                            <div class="input_geral">
+                                <label for="das">Das</label>
+                                <input type="time" id="das" required/>
+                            </div>
+                            <div class="input_geral">
+                                <label for="ate">até</label>
+                                <input type="time" id="ate" required/>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </fieldset>
+        </div>
+    </form>
+
+    <div class="back_button">
+        <button id="my_form">salvar
+    </button></div>
+    
+</body>
+</html>
